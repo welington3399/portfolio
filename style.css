@@ -31,6 +31,9 @@ body{
 }
 
 .navegacao a{
+    display: inline-flex;
+    width: 60px;
+    justify-content: center;;
     border: 1px solid #071e26;
     background-color: #0b2d39;
     border-radius: 20px;
@@ -41,12 +44,12 @@ body{
 }
 
 .navegacao a:hover{
-    background-color: #071e26;
+    background-color: white;
     border-radius: 20px;
     padding: 15px;
     margin: 15px;
     font-size: 20px;
-    color: white;
+    color: black;
 }
 /*fim cabeçalho*/
 
@@ -57,52 +60,69 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-}
-
-.inicio h1{
-    color: rgb(0, 33, 245);
-}
-
-.inicio h2{
-    font-weight: 100;
+    margin: 25px;
 }
 
 .img2{
-    height: 500px;
+    height: 450px;
 }
 
-.inicio a{
-    text-align: center;
-    width: 80px;
-    background-color: transparent;
-    color: black;
-    border: 3px solid #aea007;
+.div_inicio{
+    height: 100%;
+    border: 1px solid black;
     border-radius: 20px;
-    display: inline-block;
+    padding: 30px;
+    background-color: #0f3c4c;
+    box-shadow: 15px 15px 10px #071e26;
+}
+
+.div_inicio h1{
+    color: black;
+}
+
+.div_inicio h2{
+    font-weight: 100;
+}
+
+.div_inicio a{
+    text-align: center;
+    background-color: #0f3c4c;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
     margin: 15px;
     padding: 15px;
 }
 
 .inicio a:hover{
     text-align: center;
-    width: 80px;
-    background-color: transparent;
+    background-color: white;
     color: black;
     border: 3px solid black;
     border-radius: 20px;
-    display: inline-block;
     margin: 15px;
     padding: 15px;
 }
 
+.logo_linkgit{
+    margin-right: 5px;
+    width: 30px;
+}
+
+.botao{
+    display: inline-flex;
+    align-items: center;
+}
+
 /*fim inicio*/
+
+/*inicio sobre*/
 .sobre{
     padding: 0px 50px 0px 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    gap: 150px;
+    gap: 100px;
 }
 
 .img1{
@@ -154,6 +174,67 @@ body{
     border: 1px solid #071e26;
     border-radius: 25px;
 }
+/*FIM SOBRE*/
+
+/*INICIO SKILLS*/
+
+.nome_id h2{
+    padding-bottom: 50px;
+}
+.org_skill{
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.container {
+    border-radius: 20px;
+    height: 25px;
+    background-color: #4d4d4d;
+    position: relative;
+    margin: 25px;
+    border: 5px solid white;
+}
+
+.img_html{
+    width: 50px;
+}
+
+.container .html{
+    border-radius: 20px;
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    background-color: #0fd439;
+    animation: progress-animation 5s;
+}
+
+.container .css{
+    border-radius: 20px;
+    position: absolute;
+    height: 100%;
+    width: 75%;
+    background-color: #0fd439;
+    animation: progress-animation 5s;
+}
+
+
+.container .js{
+    border-radius: 20px;
+    position: absolute;
+    height: 100%;
+    width: 10%;
+    background-color: #0fd439;
+    animation: progress-animation 5s;
+}
+
+
+
+@keyframes progress-animation{
+    0% { width: 100%; } 
+    0% { width: 0%}
+}
+
+/*FIM SKILLS*/
 
 /*@media (max-width: 670px){
     .nome{
@@ -198,6 +279,15 @@ body{
 }
 
 @media (max-width: 1000px){
+    .cabecalho{
+        padding: 5px;
+    }
+
+    .navegacao{
+        display: flex;
+        flex-direction: column;
+    }
+
     .inicio{
         flex-direction: column;
         margin: 15px;
