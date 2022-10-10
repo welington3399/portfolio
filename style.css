@@ -1,0 +1,300 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-image: linear-gradient(#08191c, #1a6985);
+    background-repeat: no-repeat;
+    
+}
+
+/*início cabeçalho*/
+.cabecalho{
+    padding: 35px;
+    background-color: #0f3c4c;
+}
+
+.org{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nome{
+    color: white;
+}
+
+.navegacao a{
+    border: 1px solid #071e26;
+    background-color: #0b2d39;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.navegacao a:hover{
+    background-color: #071e26;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    font-size: 20px;
+    color: white;
+}
+/*fim cabeçalho*/
+
+
+/*início inicio*/
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.inicio h1{
+    color: rgb(0, 33, 245);
+}
+
+.inicio h2{
+    font-weight: 100;
+}
+
+.img2{
+    height: 500px;
+}
+
+.inicio a{
+    text-align: center;
+    width: 80px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid #aea007;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+.inicio a:hover{
+    text-align: center;
+    width: 80px;
+    background-color: transparent;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+}
+
+/*fim inicio*/
+.sobre{
+    padding: 0px 50px 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 150px;
+}
+
+.img1{
+    margin: 20px;
+    width: 500px;
+}
+
+.div_sobre{
+    border: 1px solid #071e26;
+    border-radius: 25px;
+    background-color: #0f3c4c;
+    color: white;
+    box-shadow: 15px 15px 10px #071e26;
+    padding: 55px;
+    font-size: 25px;
+    font-family: 'Justo', cursiva;
+    text-align: center;
+    width: 320px;
+    margin: 20px;
+}
+
+.div_sobre h2{
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.nome_id{
+    text-align: center;
+    font-size: 25px;
+}
+
+.nome_id h2{
+    display: inline-block;
+    padding-top: 25px;
+    border-top: double;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.format{
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    background-color: #0f3c4c;
+    border: 1px solid #071e26;
+    border-radius: 25px;
+}
+
+/*@media (max-width: 670px){
+    .nome{
+        font-size: 20px;
+    }
+    .navegacao a{
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 5px;
+        font-size: 13px;
+        color: white;
+    }
+}*/
+
+@media (max-width: 1200px){
+    .sobre{
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        gap: 0px;
+    }
+    .img1{
+        margin:0 auto;
+        width: 400px;
+    }
+    .div_sobre{
+        border: 1px solid #071e26;
+        border-radius: 25px;
+        background-color: #0f3c4c;
+        color: white;
+        box-shadow: 15px 15px 10px #071e26;
+        padding: 55px;
+        font-size: 25px;
+        font-family: 'Justo', cursiva;
+        text-align: center;
+        width: 320px;
+        margin: 20px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .inicio{
+        flex-direction: column;
+        margin: 15px;
+    }   
+
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        gap: 0px;
+    }
+    .img1{
+        margin:0 auto;
+        width: 400px;
+    }
+    .div_sobre{
+        border: 1px solid #071e26;
+        border-radius: 25px;
+        background-color: #0f3c4c;
+        color: white;
+        box-shadow: 15px 15px 10px #071e26;
+        padding: 55px;
+        font-size: 25px;
+        font-family: 'Justo', cursiva;
+        text-align: center;
+        width: 320px;
+        margin: 20px;
+    }
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 375px){
+
+    .inicio{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        gap: 0px;
+    }
+    .img1{
+        margin:0 auto;
+        width: 100px;
+    }
+
+    .img2{
+        margin: 0 autos;
+        width: 100px;
+    }
+    .div_sobre{
+        border: 1px solid #071e26;
+        border-radius: 25px;
+        background-color: #0f3c4c;
+        color: white;
+        box-shadow: 15px 15px 10px #071e26;
+        padding: 55px;
+        font-size: 25px;
+        font-family: 'Justo', cursiva;
+        text-align: center;
+        width: 320px;
+        margin: 20px;
+    }
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/*@media (max-width: 1200px){
+    .navegacao a{
+        border: 1px solid #071e26;
+        background-color: #0b2d39;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 5px;
+        font-size: 15px;
+        color: white;
+    }
+    
+    .navegacao a:hover{
+        background-color: #071e26;
+        border-radius: 20px;
+        padding: 15px;
+        margin: 5px;
+        font-size: 15px;
+        color: white;
+    } 
+
+    .nome{
+        font-size: 20px;
+    }
+}*/
+
