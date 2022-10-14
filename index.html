@@ -1,146 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt_BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="imagem/png" href="imagens/pc.png">
-    <title>Welington Ferreira de Souza</title>
+    <link rel="icon" href="imagens/churrasqueiraNovo.png">
+    <title>Churrascômetro</title>
 </head>
 <body>
-    
-    <header class="cabecalho">
-        <div class="org">
-            <h1 id="nome">Welington Ferreira de Souza</h1>
-            <nav class="navegacao">
-                <a href="#inicio1">Início</a>
-                <a href="#sobre_mim">Sobre</a>
-                <a href="#skill">Skills</a>
-                <a href="#projetos">Projetos</a>
-                <a href="#contato">Contato</a>
-            </nav>
-        </div>
-    </header>
-
-     <main>
-        <div id="inicio1" class="inicio">
-            <img class="img2" src="imagens/foto2.png" alt="">
-            <div class="div_inicio">
-                <h2>Prazer, me chamo</h2>
-                <h1>Welington Ferreira de Souza</h1>
-                <h2>estudante de programação front-end. <br>
-                    Neste perfil você verá um pouco do que aprendi até o momento. <br>
-                    A própria página, alguns projetos próprios,  e meu nível em cada linguagem.
-                </h2>
-                <a class="botao" href="https://www.linkedin.com/in/welington-ferreira-659351204/" target="_blank"><img class="logo_linkgit" src="imagens/linkedin.png" alt=""> linkdin</a>
-                <a class="botao" href="https://github.com/welington3399/portifolio.git" target="_blank"><img class="logo_linkgit" src="imagens/github.png" alt=""> GitHub</a>
+    <div id="fundo">
+        <div class="controle2">
+            <div id="conclusao">
+                <p class="ali">tabela de valores usada para calculos</p>
+                <table class="tabela">
+                    <tr>
+                        <td></td>
+                        <td>carnes</td>
+                        <td>bebidas alcoolicas</td>
+                        <td>bebidas sem alcool</td>
+                    </tr>
+                    <tr>
+                        <td>&lt 5h</td>
+                        <td>400g</td>
+                        <td>1200ml</td>
+                        <td>1000ml</td>
+                    </tr>
+                    <tr>
+                        <td>&gt 6h</td>
+                        <td>600g</td>
+                        <td>2000ml</td>
+                        <td>1500ml</td>
+                    </tr>
+                </table>
             </div>
-            <span class="ponto"></span>
+        </div>
+        <div id="novo">
+            <p></p>
+        </div>
+
+        <div id="infoo">
+
+        </div>
+        
+        <div class="separador">
+
+            <div class="container">
+                <h1>Churrascômetro</h1>
+                <input id="adultos" name="adultos" type="number" placeholder="Adultos">
+                <input id="criancas" name="criancas" type="number" placeholder="Crianças">
+                <input id="horas" name="horas" type="number" placeholder="Horas (h)">
+                <button onclick="calcular()">Calcular</button>
+                
+        
+                <div id="resultado">
+        
+                </div>
+            </div>
             
         </div>
-        <div class="sobre" id="sobre_mim">
-            <div class="div_sobre">
-                <h2>
-                    Sobre mim
-                </h2>
-                <p>
-                    welington ferreira de souza, 23 anos, estudante de programação.
-                    atualmente tenho estudado bastante HTML, CSS, java script, responsividade, git hub,
-                    porem tenho um breve conhecimente em python 3, bootstrap, noteJS
-                </p>
-            </div> 
-            <img class="img1" src="imagens/foto1.png" alt="">
-        </div>
-        <div id="skill" class="nome_id">
-            <h2>Minhas Skills</h2>
-            <div class="org_skill">
-                <div class="tam_skill">
-                    <img class="img_skill" src="imagens/html-5.png" alt="">
-                    <div class="container">
-                        <div class="html"></div>
-                        <p>HTML</p>
-                    </div>
-                </div>
-                <div class="tam_skill">
-                    <img class="img_skill" src="imagens/css-3.png" alt="">
-                    <div class="container">
-                        <div class="css"></div>
-                        <p>CSS</p>
-                    </div>
-                </div>
-                <div class="tam_skill">
-                    <img class="img_skill" src="imagens/script-java.png" alt="">
-                    <div class="container">
-                        <div class="js"></div>
-                        <p>JAVA</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <!-- segunda parte de skills-->
-            <div class="org_skill">
-                <div class="tam_skill">
-                    <img class="img_skill" src="imagens/python.png" alt="">
-                    <div class="container">
-                        <div class="python"></div>
-                        <p>PYTHON</p>
-                    </div>
-                </div>
-                <div class="tam_skill">
-                    <img class="img_skill" src="imagens/node-js.png" alt="">
-                    <div class="container">
-                        <div class="node"></div>
-                        <p>NODE JS</p>
-                    </div>
-                </div>
-                <div class="tam_skill">
-                    <img class="img_skill" src="imagens/reactJs.png" alt="">
-                    <div class="container">
-                        <div class="react"></div>
-                        <p>REACT</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="projetos" class="nome_id">
-            <h2>Meus Projetos</h2>
-            <div class="skills">
-                <div class="format">
-                    <p>a</p>
-                </div>
-                <div class="format">
-                    <p>a</p>
-                </div>
-                <div class="format">
-                    <p>a</p>
-                </div>
-            </div>
-        </div>
-     </main>
 
-     <footer>
-        <h2>Contato</h2>
-        <div class="contato">
-            <div class="dados_cont" >
-                <img class="img_cont" src="imagens/telefone.png" alt="">
-                <p><strong>Telefone: 61991123465</strong></p>
-            </div>
-            <div class="dados_cont" >
-                <img class="img_cont" src="imagens/whatsapp.png" alt="">
-                <p><strong>WhatsApp: 61981487299</strong></p>
-            </div>
-            <div class="dados_cont" >
-                <img class="img_cont" src="imagens/e-mail.png" alt="">
-                <p><strong>E-mail: welington13579@gmail.com</strong></p>
-            </div>
-        </div>
-     </footer>
-     <script src="scripts.js"></script>
 
+
+    </div>
+    <div id="resultado2">
+  
+    </div>
+
+
+    <script src="scripts.js"></script>
 </body>
 </html>
