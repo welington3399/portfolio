@@ -4,10 +4,10 @@ function mudarNome(){
     var tam = window.innerWidth;
     console.log(tam)
     
-    if(tam < 900){
+    if(tam < 920){
         nome.innerHTML = "Welington F. Souza"
     }else{
-        nome.innerHTML = "Welington Ferreira de Souza"
+        nome.innerHTML = "Welington Ferreira de Souza &lpar; &rpar;"
     }
 }
 
@@ -18,3 +18,14 @@ mudarNome();
 window.addEventListener('resize', function(){
       mudarNome();
 });
+
+
+// FUNÇÃO PARA INCREMENTAR NAVBAR
+var hamburguer = document.querySelector(".hamburguer");
+var navMeunu = document.querySelector(".nav-menu")
+
+hamburguer.addEventListener("click", () =>{
+    hamburguer.classList.toggle("active");
+    navMeunu.classList.toggle("active");
+})
+

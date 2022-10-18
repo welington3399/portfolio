@@ -1,3 +1,4 @@
+/* CONFIG GERAL */
 *{
     margin: 0%;
     padding: 0%;
@@ -8,8 +9,9 @@
 }
 
 body{
-    background-image: linear-gradient(#08191c, #1a6985);
-    background-repeat: no-repeat;
+    /* background-image: linear-gradient(#08191c, #1a6985); */
+    background-image: linear-gradient(black , grey);
+    background-repeat: repeat;
     
 }
 
@@ -17,42 +19,50 @@ body{
 .cabecalho{
     width: 100%;
     position:fixed;
-    padding: 0px 10px;
-    background-color: #0f3c4ca1;
-    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.844);
 }
 
-.org{
+.org-header{
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px 25px;
 }
 
-.nome{
-    color: white;
+#nome{
+    margin-left: 15px;
+    background: -webkit-linear-gradient(right, rgb(255, 72, 0), left, rgb(221, 255, 0));
+    background: linear-gradient( rgb(255, 72, 0), rgb(221, 255, 0));
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.navegacao a{
-    display: inline-flex;
+ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-bar ul li a{
     width: 60px;
-    justify-content: center;;
-    border: 1px solid #071e26;
-    background-color: #0b2d39;
-    border-radius: 20px;
+    display: inline-flex;
+    justify-content: center;
     padding: 15px;
-    margin: 15px;
+    margin: 10px;
     font-size: 20px;
     color: white;
 }
 
-.navegacao a:hover{
+
+.nav-bar ul li a:hover{
+    font-weight: 900;
     background-color: white;
-    border-radius: 20px;
     padding: 15px;
-    margin: 15px;
+    margin: 10px;
     font-size: 20px;
     color: black;
+    box-shadow: 0px 0px 25px darkgray;
+    transition: 0s;
 }
 /*fim cabeçalho*/
 
@@ -71,6 +81,7 @@ body{
 }
 
 .div_inicio{
+    width: 430px;
     font-weight: 500;
     color: #b5b5b5;
     height: 100%;
@@ -192,7 +203,7 @@ body{
 }
 
 .nome_id{
-    padding-top: 200px;
+    padding-top: 130px;
     text-align: center;
     font-size: 25px;
     min-height: 100vh
@@ -252,7 +263,7 @@ body{
     border-radius: 20px;
     position: absolute;
     height: 100%;
-    width: 80%;
+    width: 93%;
     background-color: #ff4b00;
     animation: progress-animation 5s;
 }
@@ -261,7 +272,7 @@ body{
     border-radius: 20px;
     position: absolute;
     height: 100%;
-    width: 85%;
+    width: 90%;
     background-color: #2196f3  ;
     animation: progress-animation 5s;
 }
@@ -271,7 +282,7 @@ body{
     border-radius: 20px;
     position: absolute;
     height: 100%;
-    width: 25%;
+    width: 40%;
     background-color: #ffc107 ;
     animation: progress-animation 5s;
 }
@@ -341,10 +352,30 @@ footer{
     width: 30px;
 }
 
+.nav-bar img{
+    margin: 10px;
+    width: 40px;
+}
+
+/* fazer navbar */
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: rgb(255, 255, 255);
+}
+
 /*FIM CONTATO*/
 
 @media (max-width: 1200px){
-    .navegacao a{
+    .nav-bar ul li a{
         display: inline-flex;
         width: 40px;
         justify-content: center;;
@@ -352,16 +383,16 @@ footer{
         background-color: #0b2d39;
         border-radius: 20px;
         padding: 15px;
-        margin: 5px;
+        margin: 10px;
         font-size: 15px;
         color: white;
     }
     
-    .navegacao a:hover{
+    .nav-bar ul li a:hover{
         background-color: white;
         border-radius: 20px;
         padding: 15px;
-        margin: 5px;
+        margin: 10px;
         font-size: 15px;
         color: black;
     }
@@ -394,7 +425,7 @@ footer{
 }
 
 @media (max-width: 1000px){
-    .navegacao a{
+    .nav-bar a{
         display: inline-flex;
         width: 40px;
         justify-content: center;;
@@ -402,15 +433,15 @@ footer{
         background-color: #0b2d39;
         border-radius: 20px;
         padding: 14px;
-        margin: 5px;
+        margin: 10px;
         font-size: 15px;
         color: white;
     }
     
-    .navegacao a:hover{
+    .nav-bar a:hover{
         width: 40px;
         padding: 14px;
-        margin: 5px;
+        margin: 10px;
         font-size: 15px;
         background-color: white;
         color: black;
@@ -450,26 +481,52 @@ footer{
     }
 }
 
-@media (max-width: 700px){
-    .navegacao a{
-        display: inline-flex;
-        width: 40px;
-        justify-content: center;;
-        border: 1px solid #071e26;
-        background-color: #0b2d39;
-        border-radius: 20px;
-        padding: 15px;
-        margin: 5px;
-        font-size: 15px;
-        color: white;
+@media (max-width: 780px){
+    .hamburguer{
+        display: block;
+        margin: 15px 0px;
+    }
+
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -450%;
+        top: 49px;
+        border-radius: 0 0 20px 20px;
+        background-color: #0f3c4c;
+        backdrop-filter: blur(10px);
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-bar .nav-menu a{
+        background-color: #10102674;
+        border: none;
+        border-radius: 0px;
+        width: 100px;
     }
     
-    .navegacao a:hover{
-        background-color: white;
-        border-radius: 20px;
+    .nav-bar ul li a:hover{
+        font-weight: 900;
         padding: 15px;
-        margin: 15px;
-        font-size: 20px;
+        margin: 10px;
+        font-size: 15px;
+        border-radius: 0px;
         color: black;
     }
 
