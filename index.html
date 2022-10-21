@@ -7,23 +7,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="imagem/png" href="imagens/pc.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/colors.css">
+    <link rel="icon" type="imagem/png" href="imagens/www.png">
     <title>Welington Ferreira de Souza</title>
 </head>
-<body>
+<body id="modedark">
     
-    <header class="cabecalho">
+    <header id="cabecalho">
         <div class="org-header">
             <h1 id="nome">Welington Ferreira de Souzaa </h1>
             
-            <nav class="nav-bar">
+            <nav id="nav_colors" class="nav-bar">
                 <ul class="nav-menu">
                     <li><a href="#inicio1">Início</a></li>
                     <li><a href="#sobre_mim">Sobre</a></li>
                     <li><a href="#skill">Skills</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#contato">Contato</a></li>
+                    <li><input type="button" id="btn_cor" value="modo escuro"></input></li>
+                    <li><input type="checkbox" name="" id="verf"></li>
                 </ul>
                 <div class="hamburguer">
                     <span class="bar"></span>
@@ -37,8 +42,8 @@
 
      <main>
         <div id="inicio1" class="inicio">
-            <img class="img2" src="imagens/foto2.png" alt="">
-            <div class="div_inicio">
+            <div id="inicio_colors" class="div_inicio">
+                <img class="selfie" src="imagens/foto_minha.jpg" alt="">
                 <h2>Prazer, me chamo</h2>
                 <h1>Welington Ferreira de Souza</h1>
                 <h2>estudante de programação front-end. <br>
@@ -48,11 +53,13 @@
                 <a class="botao" href="https://www.linkedin.com/in/welington-ferreira-659351204/" target="_blank"><img class="logo_linkgit" src="imagens/linkedin.png" alt=""> linkdin</a>
                 <a class="botao" href="https://github.com/welington3399/portifolio.git" target="_blank"><img class="logo_linkgit" src="imagens/github.png" alt=""> GitHub</a>
             </div>
-            <span class="ponto"></span>
             
+            <a href="#sobre_mim" class="ponto"></a>
+        
         </div>
+
         <div class="sobre" id="sobre_mim">
-            <div class="div_sobre">
+            <div id="sobre_colors" class="div_sobre">
                 <h2>
                     Sobre mim
                 </h2>
@@ -61,9 +68,10 @@
                     atualmente tenho estudado bastante HTML, CSS, java script, responsividade, git hub,
                     porem tenho um breve conhecimente em python 3, bootstrap, noteJS
                 </p>
-            </div> 
-            <img class="img1" src="imagens/foto1.png" alt="">
+            </div>
+            
         </div>
+            
 
         <div id="skill" class="nome_id">
             <h2>Minhas Skills</h2>
@@ -122,7 +130,8 @@
             <h2>Meus Projetos</h2>
             <div class="skills">
                 <div class="format">
-                    <p><a href="https://welington3399.github.io/churrascometro/">teste</a></p>
+                    <!-- <img class="churras" src="imagens/proj_protifolio.png" alt=""> -->
+                    <a href="https://welington3399.github.io/churrascometro/">churrascometro</a>
                 </div>
                 <div class="format">
                     <p>a</p>
@@ -134,7 +143,7 @@
         </div>
      </main>
 
-     <footer>
+     <footer id="footer">
         <h2>Contato</h2>
         <div class="contato">
             <div class="dados_cont" >
@@ -151,6 +160,11 @@
             </div>
         </div>
      </footer>
+
+     <button id="subir">
+        <a href="#inicio1">voltar ao topo</a>
+     </button>
+
      <script src="scripts.js"></script>
      <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 
