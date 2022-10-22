@@ -41,6 +41,7 @@ var cab = document.getElementById("cabecalho")
 var nav_colors = document.getElementById ("nav_colors")
 var cont_colors = document.getElementById("inicio_colors")
 var sobre_colors = document.getElementById("sobre_colors")
+var ponto_color = document.getElementById("ponto")
 
 var footer = document.getElementById("footer")
 
@@ -57,6 +58,8 @@ bto.addEventListener ("click", function (click){
         cab.style.boxShadow = "rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px";
         sobre_colors.style.background = "#242526";
         footer.style.background = "#242526"
+        ponto_color.style.borderBottom = "5px solid white"
+        ponto_color.style.borderLeft = "5px solid white"
         console.log(bto.value)
 
    }else{
@@ -70,6 +73,8 @@ bto.addEventListener ("click", function (click){
         cab.style.boxShadow = "rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px;";
         sobre_colors.style.background = "white";
         footer.style.background = "white"
+        ponto_color.style.borderBottom = "5px solid black"
+        ponto_color.style.borderLeft = "5px solid black"
         console.log(bto.value)
     }
 
