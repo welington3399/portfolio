@@ -1,0 +1,25 @@
+/* FUNDO GERAL */
+#modedark{
+    /* background: #f5f5f5; */
+    background: #f0f2f5;
+}
+
+.nav_color_b{
+    background-color: black;
+}
+
+.nav_color_w{
+    background-color: white;
+}
+
+#headerW{
+    position:fixed;
+    background: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#headerB{
+    position:fixed;
+    background: black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

@@ -1,0 +1,125 @@
+@media (max-width: 1230px){
+    .nav-bar ul li a{
+        margin: 2px;
+        padding: 10px;
+    }
+    .nav-bar ul li input{
+        margin: 2px;
+        padding: 10px;
+    }
+
+    #nome{
+        font-size: 1.9rem;
+    }
+
+    .contato{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1005px){
+    .format{
+        width: 240px;
+        height: 240px;
+    }
+}
+
+@media (max-width: 940px){
+    .nav-bar ul li a{
+        margin: 2px;
+        padding: 7px;
+        font-size: 17px;
+    }
+    .nav-bar ul li input{
+        margin: 2px;
+        padding: 7px;
+        font-size: 17px;
+    }
+
+    #nome{
+        font-size: 1.8rem;
+    }
+    .org-header{
+        margin: 0px 0px;
+    }
+}
+
+@media (max-width: 840px){
+    .skills{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .format{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 700px){
+    .org_skill {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 430px){
+    #nome{
+        font-size: 1.6em;
+    }
+
+    .selfie{
+        height: 200px;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div_inicio {
+        margin: 10px;
+        width: auto;
+        height: 100%;
+        box-shadow: none;
+    }
+
+    .div_inicio .botao {
+        margin: 10px;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        min-height: 100vh;
+    }
+
+    .div_sobre {
+        box-shadow: none;
+        padding: 15px;
+        font-size: 25px;
+    }
+
+    .img1{
+        width: 300px;
+    }
+
+    .img2{
+        width: 300px;
+    }
+
+    .org_skill{
+        display: flex;
+    }
+
+    .contato{
+        display: block;
+    }
+
+    .skills{
+        flex-direction: column;
+    }
+}

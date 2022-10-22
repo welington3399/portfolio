@@ -1,0 +1,135 @@
+#cabecalho{
+    width: 100%;
+    position:fixed;
+    background: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    z-index: 1;
+}
+
+.org-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 25px;
+}
+
+#verf{
+    display: none;
+}
+
+#nome{
+    margin-left: 15px;
+    background: #2374E1;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-bar ul li a{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+
+    font-size: 20px;
+    color: #2374E1;
+    position: relative;
+    font-weight: 600;
+}
+
+.nav-bar ul li a:hover{
+    color: #275c87;
+    font-weight: 600;
+}
+
+
+
+
+.nav-bar ul li input{
+    display: inline-flex;
+    justify-content: center;
+    padding: 15px;
+    font-size: 20px;
+    color: #2374E1;
+    position: relative;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.nav-bar ul li input:hover{
+    color: #275c87;
+}
+
+
+
+
+/* displey movel */
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: rgb(0, 0, 0);
+}
+
+@media (max-width: 820px){
+    .hamburguer{
+        display: block;
+        margin: 15px 15px;
+    }
+    .hamburguer.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguer.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburguer.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -450%;
+        top: 49px;
+        border-radius: 0 0 20px 20px;
+        background-color: #0f3c4c;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.2s;
+    }
+
+    .nav-menu.active{
+        left: 0;
+    }
+
+    .nav-bar .nav-menu a{
+        border: none;
+        border-radius: 0px;
+        width: 100px;
+    }
+    
+    .nav-bar ul li a:hover{
+        font-weight: 900;
+        padding: 15px;
+        margin: 10px;
+        font-size: 15px;
+        border-radius: 0px;
+        color: black;
+    }
+
+}
+
