@@ -64,7 +64,7 @@ bto.addEventListener ("click", function (click){
 
    }else{
         verf.checked = "";
-        bto.value = "modo escuro"
+        bto.value = "modo noturno"
         cor.style.background = "#f5f5f5";
         document.querySelector("body").setAttribute("text","black")
         cab.setAttribute("class","headerB");
@@ -80,5 +80,9 @@ bto.addEventListener ("click", function (click){
 
 })
 
+
+
+// animação de rolagem com scroll
+AOS.init();
 
 

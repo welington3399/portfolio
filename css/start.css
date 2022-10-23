@@ -1,0 +1,88 @@
+.inicio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh
+}
+
+.img_start{
+    margin-right: 15px;
+    float: left;
+    width: 300px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+
+.div_inicio{
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-weight: 500;
+    height: 100%;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 0px 15px;
+}
+
+.div_inicio h1{
+    font-weight: 500;
+}
+
+.div_inicio h2{
+    color: dimgray;
+    font-weight: 100;
+}
+
+.div_inicio .botao{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+}
+
+.inicio .botao:hover{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 15px;
+    transition: 0.5s;
+    box-shadow: 0px 0px 23px -4px #2196f3;
+}
+
+.logo_linkgit{
+    margin-right: 5px;
+    width: 30px;
+}
+
+.botao{
+    display: inline-flex;
+    align-items: center;
+}
+
+#ponto{
+    position: absolute;
+    padding: 10px;
+    transform: rotate(-45deg);
+    bottom: 80px;
+    border-bottom: 5px solid rgb(0, 0, 0);
+    border-left: 5px solid rgb(0, 0, 0);
+    animation: 2s ease 0s infinite normal none point;
+}
+
+@keyframes point {
+    0%{
+        opacity: 0.3;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

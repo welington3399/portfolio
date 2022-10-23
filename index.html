@@ -6,56 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- fonte importada -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- importação de js de rolagem do scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- importação dos css -->
+    <link rel="stylesheet" href="css/start.css">
+    <link rel="stylesheet" href="css/skills.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/colors.css">
+    <link rel="stylesheet" href="css/about_me.css">
     <link rel="stylesheet" href="css/media.css">
+    <!-- mudança do ícone da página -->
     <link rel="icon" type="imagem/png" href="imagens/www.png">
+    <!-- nome da pagina -->
     <title>Welington Ferreira de Souza</title>
 </head>
+<!-- início da página -->
 <body id="modedark">
+    <!-- início do cabeçalho -->
     <header id="cabecalho">
         <div class="org-header">
             <h1 id="nome">Welington Ferreira de Souzaa </h1>
-            
+            <!-- menu de nevagação -->
             <nav id="nav_colors" class="nav-bar">
                 <ul class="nav-menu">
-                    <li>
-                        <a href="#inicio1">Início</a>
-                        
-                    </li>
-                    <li>
-                        <a href="#sobre_mim">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#skill">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#projetos">Projetos</a>
-                    </li>
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
-                    <li>
-                        <input type="button" id="btn_cor" value="modo escuro"></input></li>
-                    <li
-                    ><input type="checkbox" name="" id="verf"></li>
+                    <li><a href="#inicio1">Início</a></li>
+                    <li><a href="#sobre_mim">Sobre</a></li>
+                    <li><a href="#cont_skill">Skills</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><input type="button" id="btn_cor" value="modo noturno"></input></li>
+                    <li><input type="checkbox" name="" id="verf"></li>
                 </ul>
+                <!-- hamburguer do displey menor -->
                 <div class="hamburguer">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-            </nav>
-        
+                <!-- fim do hamburguer do displey menor -->
+            </nav> 
+            <!-- fim do menu de nevagação -->    
         </div>
     </header>
-
+    <!-- fim do cabeçalho -->
+    <!-- demais conteudos  -->
      <main>
         <div id="inicio1" class="inicio">
             <div id="inicio_colors" class="div_inicio">
-                <img class="selfie" src="imagens/foto_minha.jpg" alt="">
+                <img class="img_start" src="imagens/foto.jpg" alt="">
                 <h2>Prazer, me chamo</h2>
                 <h1>Welington Ferreira de Souza</h1>
                 <h2>estudante de programação front-end. <br>
@@ -72,19 +73,146 @@
 
         <div class="sobre" id="sobre_mim">
             <div id="sobre_colors" class="div_sobre">
-                <h2>
+                <img class="selfie" src="imagens/foto_minha.jpg" alt="">
+                <h2 >
                     Sobre mim
                 </h2>
-                <p>
-                    Welington Ferreira de Souza, 23 anos, estudante de programação.
-                    atualmente tenho estudado bastante HTML, CSS, java script, responsividade, git hub,
-                    porem tenho um breve conhecimente em python 3, bootstrap, noteJS
+                <p class="text_about" >
+                    Tenho 23 anos, estudante de programação <strong>Font-And</strong> mas com a intenção de ser <strong>Full Stack</strong>. <br>
+                    Começei a estudar tem 1 mês e atualmente tenho estudado bastante <strong>HTML, CSS</strong> e <br> 
+                    <strong>JAVA SCRIPT</strong>, mas tenho um breve conhecimente em python 3 e bootstrap.
+                    <br><br>
+                    Apesar de nunca ter atuado na área da programação, tenho tentado adquirir <br>
+                    a cada dia novas boas práticas da programação, para assim tornar os meus <br>
+                    códigos mais limpos e organizados. <br>
+                    Já tenho em meus planos estudar <strong>REACT JS</strong> e <strong>NODE JS</strong>
                 </p>
             </div>
             
         </div>
-            
+    
+        
 
+        <div id="cont_skill">
+            <h2 id="nome_skill" >SKILLS</h2>
+            <div id="div_skill">
+            
+                <div class="card">
+                    <div class="container_skill">
+                        <div class="card">
+                            <img class="img" src="imagens/html-5.png" alt="">
+                            <div class="percent" style="--clr: #FE7816; --num:95;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>95<span>%</span></h2>
+                                    <p>html</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container_skill">
+                        <div class="card">
+                            <img class="img" src="imagens/css-3.png" alt="">
+                            <div class="percent" style="--clr: #2196F2; --num:85;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>85<span>%</span></h2>
+                                    <p>css</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container_skill">
+                        <div class="card">
+                            <img class="img" src="imagens/script-java.png" alt="">
+                            <div class="percent" style="--clr: #FEC007; --num:40;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>40<span>%</span></h2>
+                                    <p>java script</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div id="div_skill">
+                
+                <div class="card">
+                    <div class="container_skill">
+                        <div class="card">
+                            <img class="img" src="imagens/python.png" alt="">
+                            <div class="percent" style="--clr: #FEE367; --num:5;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>5<span>%</span></h2>
+                                    <p>python</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container_skill">
+                        <div class="card">
+                            <img class="img" src="imagens/node-js.png" alt="">
+                            <div class="percent" style="--clr: #65B849; --num:0;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>0<span>%</span></h2>
+                                    <p>node js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="container_skill">
+                        <div class="card">
+                            <img class="img" src="imagens/reactJs.png" alt="">
+                            <div class="percent" style="--clr: #00E9D2; --num:0;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>0<span>%</span></h2>
+                                    <p>react js</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- 
         <div id="skill" class="nome_id">
             <h2>Minhas Skills</h2>
             <div class="org_skill">
@@ -111,7 +239,6 @@
                 </div>
             </div>
 
-            <!-- segunda parte de skills-->
             <div class="org_skill">
                 <div class="tam_skill">
                     <img class="img_skill" src="imagens/python.png" alt="">
@@ -135,7 +262,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <div id="projetos" class="nome_id">
             <h2>Meus Projetos</h2>
@@ -153,6 +280,7 @@
             </div>
         </div>
      </main>
+    <!-- fim dos demais conteudos  -->
 
      <footer id="footer">
         <h2>Contato</h2>
@@ -177,7 +305,6 @@
      </a>
 
      <script src="scripts.js"></script>
-     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-
+     <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
 </body>
 </html>

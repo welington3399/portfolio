@@ -17,10 +17,31 @@
     }
 }
 
+@media (max-width: 1050px){
+    .selfie{
+        margin: 0px;
+    }
+    .div_sobre{
+        font-size: 1.5em;
+    }
+
+    .div_sobre  h2{
+        font-size: 1.5em;
+        margin: 5px 0px;
+    }
+}
+
 @media (max-width: 1005px){
     .format{
         width: 240px;
         height: 240px;
+    }
+    .div_sobre{
+        font-size: 1.3em;
+    }
+
+    .div_sobre  h2{
+        font-size: 1.3em;
     }
 }
 
@@ -44,15 +65,28 @@
     }
 }
 
-@media (max-width: 840px){
-    .skills{
+/* @media (max-width: 895px){
+    
+} */
+
+@media (max-width: 810px){
+    #div_skill{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 50px;
     }
     
     .format{
         width: 300px;
         height: 300px;
+    }
+}
+
+@media (max-width: 790px){
+    .img_start{
+        width: 200px;
+        float: none;
     }
 }
 
@@ -72,11 +106,15 @@
         height: 200px;
     }
 
-    .inicio {
+    /* .inicio {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
+    } */
+
+    /* .img_start{
+       
+    } */
 
     .div_inicio {
         margin: 10px;
@@ -87,6 +125,10 @@
 
     .div_inicio .botao {
         margin: 10px;
+    }
+
+    #ponto{
+        bottom: 30px;
     }
 
     .sobre {
@@ -100,15 +142,12 @@
     .div_sobre {
         box-shadow: none;
         padding: 15px;
-        font-size: 25px;
+        font-size: 1.3em;
     }
 
-    .img1{
-        width: 300px;
-    }
-
-    .img2{
-        width: 300px;
+    .selfie{
+        width: 150px;
+        height: 150px;
     }
 
     .org_skill{
@@ -121,5 +160,20 @@
 
     .skills{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 376px){
+    .img_start{
+        display: none;
+    }
+}
+
+@media (max-width: 285px){
+    .inicio{
+        width: 355px;
+    }
+    .div_inicio{
+        margin-top: 55px;
     }
 }
