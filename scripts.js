@@ -1,3 +1,5 @@
+alert ("página não concluída!")
+
 //função que abrevia o nome
 function mudarNome(){
     var nome = document.getElementById("nome");
@@ -29,6 +31,22 @@ hamburguer.addEventListener("click", () =>{
     navMeunu.classList.toggle("active");
 
 })
+
+// NOME REDIGITAR
+function typeWriter (elemento){
+    const textoArray = elemento.innerHTML.split("");
+    elemento.innerHTML = "";
+    textoArray.forEach((letra, i) => {
+        setTimeout(() => elemento.innerHTML += letra, 200 * i)
+    });
+}
+
+const nomee = document.querySelector("#nome_start");
+
+typeWriter(nomee)
+
+
+
 
 // MUDAR COR
 var bto = document.getElementById("btn_cor")
@@ -81,8 +99,5 @@ bto.addEventListener ("click", function (click){
 })
 
 
-
-// animação de rolagem com scroll
-AOS.init();
 
 
