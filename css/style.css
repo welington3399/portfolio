@@ -1,3 +1,22 @@
+@import url(nav.css);
+
+@import url(start.css);
+
+@import url(about_me.css);
+
+@import url(skills.css);
+
+@import url(project.css);
+
+@import url(footer.css);
+
+@import url(media.css);
+
+strong{
+    color: #2371DA;
+}
+
+
 /* CONFIG GERAL */
 *{
     margin: 0px;
@@ -8,6 +27,11 @@
         
 }
 
+body{
+    background: #F5F5F5;
+}
+
+/* CONFIG DA BARRA DE ROLAGEM  */
 ::-webkit-scrollbar {
     width:15px;
     height: 10px;
@@ -22,59 +46,6 @@
     background: #2e9dd8;
     border: 1px solid black;
     }
-
-/*início inicio*/
-
-
-
-/*fim inicio*/
-
-/*inicio sobre*/
-
-/*FIM SOBRE*/
-
-/*INICIO SKILLS*/
-
-
-
-/*FIM SKILLS*/
-
-/*INICIO CONTATO*/
-#footer{
-    background-color: white;
-    text-align: center;
-    padding: 15px;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px -2px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.contato{
-    padding: 25px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.contato h2,p{
-    margin: 10px;
-}
-
-.dados_cont{
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    font-size: 1.2em;   
-}   
-
-.img_cont{
-    padding: 5px;
-    margin: 1px;
-    width: 30px;
-}
-
-.nav-bar img{
-    margin: 10px;
-    width: 40px;
-}
 
 /* subir página */
 
@@ -102,6 +73,5 @@
     box-shadow: rgb(146, 146, 146) 0px 1px 4px;
     
 }
-
 
 /*FIM CONTATO*/

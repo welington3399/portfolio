@@ -24,7 +24,7 @@ window.addEventListener('resize', function(){
 
 // FUNÇÃO PARA INCREMENTAR NAVBAR
 var hamburguer = document.querySelector(".hamburguer");
-var navMeunu = document.querySelector(".nav-menu")
+var navMeunu = document.querySelector("#nav-menu")
 
 hamburguer.addEventListener("click", () =>{
     hamburguer.classList.toggle("active");
@@ -46,8 +46,6 @@ const nomee = document.querySelector("#nome_start");
 typeWriter(nomee)
 
 
-
-
 // MUDAR COR
 var bto = document.getElementById("btn_cor")
 var name_btn = document.getElementById("btn_cor").value
@@ -56,7 +54,7 @@ var verf = document.getElementById("verf")
     //cores
 var cor = document.getElementById("modedark")
 var cab = document.getElementById("cabecalho")
-var nav_colors = document.getElementById ("nav_colors")
+var nav_menu = document.getElementById ("nav-menu")
 var cont_colors = document.getElementById("inicio_colors")
 var sobre_colors = document.getElementById("sobre_colors")
 var ponto_color = document.getElementById("ponto")
@@ -66,35 +64,68 @@ var footer = document.getElementById("footer")
 console.log(verf.checked)
 
 bto.addEventListener ("click", function (click){
-   if (verf.checked == false){
+    //FUNDO ESCURO 
+  if (verf.checked == false){
         verf.checked = "true";
-        bto.value = "modo claro"
+        bto.value = "modo claro";
         cor.style.background = "#18191a";
+        nav_menu.style.background = "#242526";
         document.querySelector("body").setAttribute("text","white");
         cab.style.background = "#242526";
         cont_colors.style.background = "#242526";
         cab.style.boxShadow = "rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px";
         sobre_colors.style.background = "#242526";
-        footer.style.background = "#242526"
-        ponto_color.style.borderBottom = "5px solid white"
-        ponto_color.style.borderLeft = "5px solid white"
-        console.log(bto.value)
+        footer.style.background = "#242526";
+        ponto_color.style.borderBottom = "5px solid white";
+        ponto_color.style.borderLeft = "5px solid white";
+        console.log(bto.value);
 
+        
+    // FUNDO CLARO
    }else{
         verf.checked = "";
-        bto.value = "modo noturno"
+        bto.value = "modo noturno";
         cor.style.background = "#f5f5f5";
-        document.querySelector("body").setAttribute("text","black")
+        nav_menu.style.background = "#FFFFFF";
+        document.querySelector("body").setAttribute("text","black");
         cab.setAttribute("class","headerB");
         cab.style.background = "white";
         cont_colors.style.background = "white";
         cab.style.boxShadow = "rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px;";
         sobre_colors.style.background = "white";
-        footer.style.background = "white"
-        ponto_color.style.borderBottom = "5px solid black"
-        ponto_color.style.borderLeft = "5px solid black"
-        console.log(bto.value)
+        footer.style.background = "white";
+        ponto_color.style.borderBottom = "5px solid black";
+        ponto_color.style.borderLeft = "5px solid black";
+        console.log(bto.value);
+ 
+
+       
     }
+
+//testando marcação de check box
+    function teste(){
+        localStorage.setItem("fixo", verf.checked )
+        let fixo = localStorage.getItem("fixo", verf.checked )
+        console.log(fixo)
+        if (fixo == "true"){
+            cor.style.background = "#18191a";
+            document.querySelector("body").setAttribute("text","white");
+            cab.style.background = "#242526";
+            cont_colors.style.background = "#242526";
+            cab.style.boxShadow = "rgb(0 0 0 / 30%) 0px 1px 2px 0px, rgb(0 0 0 / 15%) 0px 1px 3px 1px";
+            sobre_colors.style.background = "#242526";
+            footer.style.background = "#242526"
+            ponto_color.style.borderBottom = "5px solid white"
+            ponto_color.style.borderLeft = "5px solid white"
+            console.log(bto.value)
+        }else{
+            console.log("erro")
+        }
+    }
+     teste()
+    
+
+
 
 })
 

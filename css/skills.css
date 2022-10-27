@@ -1,7 +1,11 @@
 /* fundo das skills */
 #div_skill{
+    max-width: 1000px;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
     margin-bottom: 50px;
 }
 
@@ -13,14 +17,6 @@
     opacity: 0;
 }
 
-@keyframes fadeIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 .card{
     display: flex;
@@ -136,7 +132,7 @@
 .dot{
     position: absolute;
     inset: 5px;
-    z-index: 10;
+    z-index: 1;
     transform: rotate(calc(3.6deg * var(--num)));
     animation: animateDot 2s linear forwards;
 }
