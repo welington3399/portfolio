@@ -17,6 +17,20 @@
     }
 }
 
+@media(max-width: 1125px){
+    #nome{
+        margin-left: 0px;
+    }
+
+    #nav-bar ul li a{
+        
+        padding: 15px 15px 15px 7px;
+    }
+    #nav-bar ul li input{
+        padding: 15px 0px 15px 7px;
+    }
+}
+
 @media (max-width: 1050px){
     .selfie{
         margin: 0px;
@@ -42,19 +56,20 @@
 }
 
 @media (max-width: 940px){
-    .nav-bar ul li a{
+    #nav-bar ul li a{
         margin: 2px;
         padding: 7px;
-        font-size: 17px;
+
     }
-    .nav-bar ul li input{
+    #nav-bar ul li input{
         margin: 2px;
         padding: 7px;
-        font-size: 17px;
+
     }
 
     #nome{
         font-size: 1.8rem;
+        margin-left: 15px;
     }
     .org-header{
         margin: 0px 0px;
@@ -102,16 +117,6 @@
         height: 200px;
     }
 
-    /* .inicio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
-
-    /* .img_start{
-       
-    } */
-
     .div_inicio {
         margin: 10px;
         width: auto;
@@ -155,6 +160,10 @@
 
     .skills{
         flex-direction: column;
+    }
+
+    .img_proj{
+        height: 100%;
     }
 }
 

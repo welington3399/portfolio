@@ -15,7 +15,7 @@
 
 
 .div_inicio{
-    opacity: 0;
+    opacity: 1;
     background: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 500;
@@ -23,7 +23,7 @@
     border-radius: 20px;
     padding: 30px;
     margin: 0px 15px;
-    animation: animate 3s forwards ease;
+    animation: animate 2s ease;
 }
 
 @keyframes animate {

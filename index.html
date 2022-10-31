@@ -24,7 +24,7 @@
                     <li><a href="#sobre_mim">Sobre</a></li>
                     <li><a href="#cont_skill">Skills</a></li>
                     <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#footer">Contato</a></li>
                     <li><input type="button" id="btn_cor" value="modo noturno"></input></li>
                     <li><input type="checkbox" name="" id="verf"></li>
                 </ul>
@@ -40,8 +40,11 @@
         </div>
     </header>
     <!-- fim do cabeçalho -->
+
     <!-- demais conteudos  -->
      <main>
+
+        <!-- começo do inicio -->
         <div id="inicio1" class="inicio">
             <div id="inicio_colors" class="div_inicio">
                 <img class="img_start" src="imagens/foto.jpg" alt="">
@@ -56,9 +59,21 @@
             </div>
             
             <a href="#sobre_mim" id="ponto"></a>
+
+            <a href="#inicio1" id="subir">
+                <svg class="style" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 28 28" version="1.1">
+                     <g  id="🔍-System-Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                         <g  id="ic_fluent_arrow_down_28_filled" fill="#2E7BE3" fill-rule="nonzero">
+                             <path d="M23.7118,15.7021 C24.1,15.3092 24.0962,14.6761 23.7034,14.2879 C23.3105,13.8997 22.6774,13.9035 22.2892,14.2963 L15.0005,21.6726 L15.0005,3.99725 C15.0005,3.44497 14.5528,2.99725 14.0005,2.99725 C13.4482,2.99725 13.0005,3.44497 13.0005,3.99725 L13.0005,21.6703 L5.71406,14.2963 C5.32588,13.9035 4.69272,13.8997 4.29987,14.2879 C3.90703,14.6761 3.90325,15.3092 4.29143,15.7021 L13.1125,24.6291 C13.6018,25.1243 14.4014,25.1243 14.8908,24.6291 L23.7118,15.7021 Z" id="🎨-Color"/>
+                         </g>
+                     </g>
+                 </svg>
+             </a>
         
         </div>
+        <!-- fim do inicio -->
 
+        <!-- começo do sobre mim -->
         <div class="sobre" id="sobre_mim">
             <div id="sobre_colors" class="div_sobre">
                 <img class="selfie" src="imagens/foto_minha.jpg" alt="">
@@ -78,9 +93,9 @@
             </div>
             
         </div>
-    
-        
+        <!-- fim do sobre mim -->
 
+        <!-- inicio das habilidades -->
         <div id="cont_skill">
             <h2 id="nome_skill" >SKILLS</h2>
             <div id="div_skill">
@@ -212,73 +227,19 @@
                 </div>
                 
             </div>
-    
-            <!-- <div id="div_skill">
-                
-                <div class="card">
-                    <div class="container_skill">
-                        <div class="card">
-                            <img class="img" src="imagens/python.png" alt="">
-                            <div class="percent" style="--clr: #FEE367; --num:5;">
-                                <div class="dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>5<span>%</span></h2>
-                                    <p>python</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="container_skill">
-                        <div class="card">
-                            <img class="img" src="imagens/node-js.png" alt="">
-                            <div class="percent" style="--clr: #65B849; --num:0;">
-                                <div class="dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>0<span>%</span></h2>
-                                    <p>node js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="container_skill">
-                        <div class="card">
-                            <img class="img" src="imagens/reactJs.png" alt="">
-                            <div class="percent" style="--clr: #00E9D2; --num:0;">
-                                <div class="dot"></div>
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>0<span>%</span></h2>
-                                    <p>react js</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
+        <!-- fim das habilidades -->
 
-
+        <!-- inicio dos projetos -->
         <div id="projetos">
             <h2>Meus Projetos</h2>
             <div class="cont_proj">
-                <div class="format">
-                    <img class="img_proj" src="imagens/proj_protifolio.png" alt="">
-                    <a href="https://welington3399.github.io/churrascometro/">churrascometro</a>
+                <div  class="format churras">
+                    <img class="img_proj" src="imagens/proj_protifolio.png" alt="" >
+                    <div class="transparent">
+                        <a href="https://welington3399.github.io/churrascometro/" target="_blank">ir para página</a>
+                        <p>churrascometro</p>
+                    </div>
                 </div>
                 <div class="format">
                     <div class="faixa">
@@ -297,32 +258,31 @@
                 </div>
             </div>
         </div>
+        <!-- fim dos projetos -->
+
      </main>
     <!-- fim dos demais conteudos  -->
 
-    <footer id="footer">
-        <h2>Contato</h2>
-        <div class="contato">
-            <div class="dados_cont" >
-                <img class="img_cont" src="imagens/telefone.png" alt="">
-                <p><strong>Telefone: 61991123465</strong></p>
-            </div>
-            <div class="dados_cont" >
-                <img class="img_cont" src="imagens/whatsapp.png" alt="">
-                <p><strong>WhatsApp: 61981487299</strong></p>
-            </div>
-            <div class="dados_cont" >
-                <img class="img_cont" src="imagens/e-mail.png" alt="">
-                <p><strong>E-mail: welington13579@gmail.com</strong></p>
-            </div>
+     <!-- início do rodapé -->
+     <footer id="footer">
+        
+        <div>
+            <p class="info"> © 2022 Welington Ferreira de Souza</p>
+            <p>Estes são os meios de contatos em que vocês podem entrar em contato comigo de forma mais rápida.</p>
+        </div>       
+        
+        <div class="org_footer">
+            <a href="https://wa.me/5561981487299" target="_blank"><img class="img_cont" src="imagens/whatsapp.png" alt=""></a>
+            <a href="tel:+5561991123465" target="_blank"><img class="img_cont" src="imagens/telefone.png" alt=""></a>
+            <a href="mailto:welington13579@gmail.com" target="_blank"><img class="img_cont" src="imagens/e-mail.png" alt=""></a>
         </div>
+        
     </footer>
 
-    <a href="#inicio1" id="subir">
-        voltar ao topo
-    </a>
+    <!-- fim do rodapé -->
 
     <script src="scripts.js"></script>
-     <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script> -->
+
 </body>
+<!-- fim da página -->
 </html>

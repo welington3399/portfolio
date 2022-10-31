@@ -14,10 +14,6 @@
     justify-content: center;
 }
 
-.img_proj{
-    width: 100%;
-}
-
 .nome_id{
     padding-top: 130px;
     text-align: center;
@@ -27,19 +23,63 @@
     
 .nome_id h2{
     display: flex;
-
     padding-top: 25px;
     border-top: double;
 }
 
+.img_proj{
+    width: 100%;
+    position: absolute;
+    right: 0px;
+}
 
-#churras{
-    background: url("../imagens/proj_protifolio.png");
-    background-size: cover;
+.churras .transparent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.churras .transparent:hover{
+    backdrop-filter: blur(2px);
+    height: 100%;
+    width: 100%;
+}
+
+.churras:hover a{
+    color: black;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 900;
+    background-color: #2575E1;
+    position: relative;
+    transition: 0.5s;
+}
+
+.churras:hover p{
+    color: black;
+    padding: 10px;
+    font-size: 1.8em;
+    font-weight: 900;
+    position: relative;
+    transition: 0.5s;
+}
+
+.img_proj:hover{
+    width: 100%;
+    filter: blur(2px);
+    transition: 0.3s;
+}
+
+.churras a{
+    align-items: center;
 }
 
 .format{
     float: left;
+    position: relative;
     margin: 15px;
     width: 500px;
     height: 300px;
@@ -59,7 +99,7 @@
     right: 114px;
   }
 
-  .texto{
+.faixa .texto{
     position: relative;
     font-size: 1.7em;
     color: white;

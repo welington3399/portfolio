@@ -37,7 +37,7 @@ function typeWriter (elemento){
     const textoArray = elemento.innerHTML.split("");
     elemento.innerHTML = "";
     textoArray.forEach((letra, i) => {
-        setTimeout(() => elemento.innerHTML += letra, 200 * i)
+        setTimeout(() => elemento.innerHTML += letra, 100 * i)
     });
 }
 
@@ -79,8 +79,6 @@ bto.addEventListener ("click", function (click){
         ponto_color.style.borderBottom = "5px solid white";
         ponto_color.style.borderLeft = "5px solid white";
         console.log(bto.value);
-
-        
     // FUNDO CLARO
    }else{
         verf.checked = "";
@@ -97,9 +95,6 @@ bto.addEventListener ("click", function (click){
         ponto_color.style.borderBottom = "5px solid black";
         ponto_color.style.borderLeft = "5px solid black";
         console.log(bto.value);
- 
-
-       
     }
 
 //testando marcação de check box
@@ -124,11 +119,19 @@ bto.addEventListener ("click", function (click){
     }
      teste()
     
-
-
-
 })
 
+//sumir seta
+var seta = document.getElementById("subir")
 
+document.addEventListener ("scroll", sumir)
 
+function sumir(){  
+    if (window.scrollY > 10) {
+       seta.style.display = "block";
+    }else{
+        seta.style.display = "none";
+    }
+}
 
+sumir()

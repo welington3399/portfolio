@@ -50,28 +50,20 @@ body{
 /* subir página */
 
 #subir{
-    background: linear-gradient(#120a6a, #00ffee);
-    font-weight: 900;
-    padding: 10px;
+    display: block;
     position: fixed;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 20px;
-    border: 1px solid grey;
+    width: 27px;
+    height: 27px;
+    bottom: 35px;
+    right: 35px;
     z-index: 1;
-    color: black;
+    rotate: 180deg;
 }
 
-#subir:hover{
-    font-weight: 900;
-    padding: 13px;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 25px;
-    transition: 0.3s;
-    box-shadow: rgb(146, 146, 146) 0px 1px 4px;
-    
+.style:hover{
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
 }
 
 /*FIM CONTATO*/
