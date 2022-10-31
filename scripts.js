@@ -123,7 +123,6 @@ bto.addEventListener ("click", function (click){
 
 //sumir seta
 var seta = document.getElementById("subir")
-
 document.addEventListener ("scroll", sumir)
 
 function sumir(){  
