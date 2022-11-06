@@ -1,3 +1,43 @@
+@media(min-width: 1800px){
+    .org-header{
+        scale: 1;
+    }
+    #nome{
+        font-size: 38px;
+    }
+    #nav-bar ul li a,
+    #nav-bar ul li input{
+        font-size: 25px;
+    }
+    .div_inicio{
+        scale: 1.3;
+    }
+    .div_sobre{
+        scale: 1.3;
+    }
+    #div_skill {
+        max-width: 1058px;
+        height: 802px;
+        gap: 115px;
+    }
+    .ali_skill{
+        scale: 1.3;
+    }
+    .estrutura_div_proj{
+        scale: 1.3;
+        margin: 85px;
+    }
+    .tam_cont_footer{
+        width: 800px;
+        margin: auto;
+        padding-top: 25px;
+        scale: 1.2;
+    }
+    #subir{
+        scale: 1.3;
+    }
+}
+
 @media (max-width: 1230px){
     .nav-bar ul li a{
         margin: 2px;
@@ -76,20 +116,6 @@
     }
 }
 
-/* @media (max-width: 895px){
-    
-} */
-
-/* @media (max-width: 810px){
-    #div_skill{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-    
-} */
-
 @media (max-width: 790px){
     .img_start{
         width: 200px;
@@ -105,6 +131,15 @@
     .org_skill {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 542px){
+    .div_inicio{
+        margin: 55px 15px; 
+    }
+    #ponto {
+        bottom: -35px;
     }
 }
 
@@ -139,8 +174,7 @@
         min-height: 100vh;
     }
 
-    .div_sobre {
-
+    .div_sobre{
         padding: 15px;
         font-size: 1.3em;
     }

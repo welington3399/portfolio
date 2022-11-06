@@ -16,7 +16,7 @@
 
 .div_inicio{
     opacity: 1;
-    background: white;
+    background: var(--background-itens);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     font-weight: 500;
     height: 100%;
@@ -55,6 +55,7 @@
 
 .div_inicio h1{
     font-weight: 500;
+    color: var(--color-text);
 }
 
 .div_inicio h2{
@@ -99,8 +100,8 @@
     padding: 10px;
     transform: rotate(-45deg);
     bottom: 80px;
-    border-bottom: 5px solid rgb(0, 0, 0);
-    border-left: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid var(--color-text);
+    border-left: 5px solid var(--color-text);
     animation: 2s ease 0s infinite normal none point;
 }
 

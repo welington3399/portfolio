@@ -28,7 +28,7 @@ strong{
 }
 
 body{
-    background: #F5F5F5;
+    background: var(--background-body);
 }
 
 /* CONFIG DA BARRA DE ROLAGEM  */
@@ -58,6 +58,35 @@ body{
     right: 35px;
     z-index: 1;
     rotate: 180deg;
+}
+
+:root{
+    /* --background-body:#F5F5F5 ; */
+    --background-body:#F0F0F0;
+    --background-itens: #FFFFFF;
+    --color-text: #000000;
+
+    --background-skills: rgb(255, 255, 255);
+    --background-text-skills: rgb(0, 0, 0);
+}
+
+body.white{
+    /* --background-body:#F5F5F5; */
+    --background-body:#F0F0F0;
+    --background-itens: #FFFFFF;
+    --color-text: #000000;
+
+    --background-skills: rgb(255, 255, 255);
+    --background-text-skills: rgb(0, 0, 0);
+}
+
+body.black{
+    --background-body:#18191A;
+    --background-itens: #242526;
+    --color-text: #FFFFFF;
+
+    --background-skills: rgb(0, 0, 0);
+    --background-text-skills: rgb(255, 255, 255);
 }
 
 .style:hover{
