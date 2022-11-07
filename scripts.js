@@ -113,7 +113,7 @@ function estrutura(){
             </div>
         </div>
         <div class="text_proj">
-            <h2>em brave!</h2>
+            <h2>em breve!</h2>
             <p>novos projetos estão sendo desenvolvidos.</p>
         </div>
     </div>
